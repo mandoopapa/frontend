@@ -1,13 +1,5 @@
 import { useWeb3React } from "@web3-react/core";
-import styled from "styled-components";
-
-const StyledButton = styled.button`
-  width: 150px;
-  height: 2rem;
-  border-radius: 1rem;
-  border-color: blue;
-  cursor: pointer;
-`
+import { Button } from "react-bootstrap";
 
 export function SignMessage() {
 	const { account, active, library } = useWeb3React()
@@ -32,6 +24,6 @@ export function SignMessage() {
 	}
 
 	return (
-		<StyledButton disable={!active ? true : false} onClick={handleSignMessage}>Sign Message</StyledButton>
+		<Button variant="info" disable={!active ? true : false} onClick={handleSignMessage}>Sign Message</Button>
 	)
 }

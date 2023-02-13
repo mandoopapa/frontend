@@ -1,22 +1,19 @@
 import { useWeb3React } from "@web3-react/core"
 import { useEffect, useState } from "react"
 import { ethers } from 'ethers'
-import styled from "styled-components"
-
-const StyledWalletStatusDiv = styled.div`
-  display: flex;
-  gap: 20px;
-`
+import { ListGroup, ListGroupItem } from "react-bootstrap"
 
 // 체인Id
 function ChainId() {
   const { chainId } = useWeb3React()
 
   return (
-    <>
-      <span>Chain Id</span>
-      <span>{chainId}</span>
-    </>
+    <div className="container">
+      <ListGroup variant="flush">
+      <ListGroupItem>Chain Id</ListGroupItem>
+      <ListGroupItem>{chainId}</ListGroupItem>
+      </ListGroup>
+    </div>
   )
 }
 
@@ -52,22 +49,26 @@ function BlockNumber() {
   }, [library, chainId])
 
   return (
-    <>
-      <span>Block Number :</span>
-      <span>{blockNumber}</span>
-    </>
+    <div className="container">
+      <ListGroup variant="flush">
+        <ListGroupItem>Block Number</ListGroupItem>
+        <ListGroupItem>{blockNumber}</ListGroupItem>
+      </ListGroup>
+    </div>
   )
 }
 
-// account 정보 
+// account 정보 중간에 ... 처리하고 뒷 4자리 표시
 function Account() {
   const { account } = useWeb3React()
 
   return (
-  <>
-    <span>Account :</span>
-    <span>{account ? `${account.substring(0, 6)}...${account.substring(account.length-4)}` : ''}</span>
-  </>
+  <div className="container">
+    <ListGroup variant="flush">
+      <ListGroupItem>Account</ListGroupItem>
+      <ListGroupItem>{account ? `${account.substring(0, 6)}...${account.substring(account.length-4)}` : ''}</ListGroupItem>
+    </ListGroup>
+  </div>
   )
 }
 
@@ -104,22 +105,23 @@ function Balance() {
   }, [account, library, chainId])
 
   return (
-    <>
-      <span>Balance :</span>
-      <span>{balance ? `${ethers.utils.formatEther(balance)} ETH` : ''}</span>
-    </>
+    <div className="container">
+      <ListGroup variant="flush">
+        <ListGroupItem>Balance</ListGroupItem>
+        <ListGroupItem>{balance ? `${ethers.utils.formatEther(balance)} ETH` : ''}</ListGroupItem>
+      </ListGroup>
+    </div>
   )
 }
 
 
-
 export function WalletStatus() {
   return (
-    <StyledWalletStatusDiv>
+    <>
       <ChainId />
       <BlockNumber />
       <Account />
       <Balance />
-    </StyledWalletStatusDiv>
+    </>
   )
 }

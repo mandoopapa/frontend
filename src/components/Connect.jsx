@@ -2,26 +2,8 @@ import { UnsupportedChainIdError, useWeb3React } from "@web3-react/core"
 import { useState } from "react"
 import { injected } from "../utils/connectors"
 import { useInactiveListener, useWeb3Connect } from "../utils/hooks"
-import styled from 'styled-components';
 import { NoEthereumProviderError, UserRejectedRequestError } from "@web3-react/injected-connector";
-
-// 간단하게 스타일 입히기
-const StyledActivateButton = styled.button`
-  width: 150px;
-  height: 2rem;
-  border-radius: 1rem;
-  border-color: green;
-  cursor: pointer;
-`;
-
-const StyledDeactivateButton = styled.button`
-  width: 150px;
-  height: 2rem;
-  border-radius: 1rem;
-  border-color: red;
-  cursor: pointer;
-`;
-
+import { Button } from "react-bootstrap";
 
 // 활성화
 const Activate = () => {
@@ -44,11 +26,11 @@ const Activate = () => {
   useInactiveListener(!eagerConnectionSuccessful);
 
   return (
-    <StyledActivateButton disabled={active} 
+    <Button variant="primary" disabled={active} 
     style={{
       borderColor: activating ? 'orange' : active ? 'unset' : 'green'
     }}
-    onClick={handleActivate}>Connect</StyledActivateButton>
+    onClick={handleActivate}>Wallet Connect</Button>
   )
 }
 
@@ -64,11 +46,11 @@ const Deactivate = () => {
   }
 
   return (
-    <StyledDeactivateButton disabled={!active} 
+    <Button variant="danger" disabled={!active} 
     style={{
       borderColor: active ? 'red' : 'unset'
     }}
-    onClick={handleDeactivate}>Disonnect</StyledDeactivateButton>
+    onClick={handleDeactivate}>Disonnect</Button>
   )
 }
 
