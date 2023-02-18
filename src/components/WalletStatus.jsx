@@ -1,26 +1,22 @@
 import { useWeb3React } from "@web3-react/core"
 import { useEffect, useState } from "react"
 import { ethers } from 'ethers'
-import { ListGroup, ListGroupItem } from "react-bootstrap"
 
-// 체인Id
+// Chain ID Information
 function ChainId() {
   const { chainId } = useWeb3React()
 
   return (
-    <div className="container">
-      <ListGroup variant="flush">
-      <ListGroupItem>Chain Id</ListGroupItem>
-      <ListGroupItem>{chainId}</ListGroupItem>
-      </ListGroup>
+    <div>
+      <span>Chain Id</span>
+      <span>{chainId}</span>
     </div>
   )
 }
 
-// BlockNumber 정보
+// BlockNumber Information
 function BlockNumber() {
   const { chainId, library } = useWeb3React();
-
   const [blockNumber, setBlockNumber] = useState();
 
   useEffect(() => {
@@ -49,30 +45,26 @@ function BlockNumber() {
   }, [library, chainId])
 
   return (
-    <div className="container">
-      <ListGroup variant="flush">
-        <ListGroupItem>Block Number</ListGroupItem>
-        <ListGroupItem>{blockNumber}</ListGroupItem>
-      </ListGroup>
+    <div>
+        <span>Block Number</span>
+        <span>{blockNumber}</span>
     </div>
   )
 }
 
-// account 정보 중간에 ... 처리하고 뒷 4자리 표시
+// account Information. wallet account is too big number, so that omitted except for the last 4 digits.  
 function Account() {
   const { account } = useWeb3React()
 
   return (
-  <div className="container">
-    <ListGroup variant="flush">
-      <ListGroupItem>Account</ListGroupItem>
-      <ListGroupItem>{account ? `${account.substring(0, 6)}...${account.substring(account.length-4)}` : ''}</ListGroupItem>
-    </ListGroup>
+  <div>
+    <span>Account</span>
+    <span>{account ? `${account.substring(0, 6)}...${account.substring(account.length-4)}` : ''}</span>
   </div>
   )
 }
 
-// Balance 정보
+// Balance Information
 function Balance() {
   const { account, library, chainId } = useWeb3React()
   const [balance, setBalance] = useState();
@@ -105,11 +97,9 @@ function Balance() {
   }, [account, library, chainId])
 
   return (
-    <div className="container">
-      <ListGroup variant="flush">
-        <ListGroupItem>Balance</ListGroupItem>
-        <ListGroupItem>{balance ? `${ethers.utils.formatEther(balance)} ETH` : ''}</ListGroupItem>
-      </ListGroup>
+    <div>
+      <span>Balance</span>
+      <span>{balance ? `${ethers.utils.formatEther(balance)} ETH` : ''}</span>
     </div>
   )
 }

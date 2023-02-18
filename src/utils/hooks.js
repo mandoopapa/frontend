@@ -2,7 +2,6 @@ import { useWeb3React } from "@web3-react/core";
 import { useState, useEffect, useCallback } from "react";
 import { injected } from "./connectors";
 
-// Web3 커넥트 사용
 export function useWeb3Connect() {
   const { activate, active } = useWeb3React();
   const [tried, setTried] = useState(false);
@@ -36,7 +35,6 @@ export function useWeb3Connect() {
   return tried;
 }
 
-// 이더리움 라이브러리 감지 - 자동적으로 연결될 수 있게 하기 위한 Hook 작성
 export function useInactiveListener(suppress = false) {
   const  { active, error, activate } = useWeb3React()
 

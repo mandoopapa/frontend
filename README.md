@@ -1,14 +1,60 @@
 # React Frontend page.
 
-1. 지갑 연결
-- Wallet Connect / Disconnect 버튼 생성
+### 02.08 ~ 02.15 Seminar
+- Metamask Wallet Connect Button
+	- Create Wallet Connect / Disconnect Button
 
-2. 지갑 상태 표시
-- WalletStatus 표시
-	- ChainID. Block Number, Account Info, Balance 표시
+- Wallet Account Information
+	- Display WalletStatus - Chain ID, Block Number, Account Info, Balance
 
-3. 서명하기
-- Sign Message 버튼 생성
+- Sign Message
+	- Create a Sign Message Button
 
-4. Header, Footer 레이아웃 작성
-- 기존의 styled component 형태로 간편하게 했던 UI 삭제 후 react-bootstrap 적용
+- Basic Layout
+	- Remove the UI that was simplified in 'styled component form' and Apply the react-bootstrap.
+
+### 02.15 ~ 02.23 Seminar
+- [x] English Mode On
+
+- Practice Branch Strategy
+	- [x] Create a branch every week, it will be 'ProjectName-SeminarDate' form.
+
+- Wallet Connect Button updates
+	- [x] Change the text for connected, and not connected.
+	- [ ] 
+
+- Custom CSS
+	-	[ ] Creating my own CSS from blank.
+
+- Apply Eslint
+	- [x] Install Eslint extension
+	- [ ] Apply Eslint my project
+
+- Coin Transfer Button
+	- [ ] Create a Coin Transfer Button
+
+- Read and Practice React Documents
+	- [ ] Korean Documents
+		- [ ] Main Concepts
+			1. Hello World [x]
+			2. Introducing JSX [x]
+			3. Rendering Elements [ ]
+			4. Components and Props [ ]
+			5. State and Lifecycle [ ]
+			6. Handling Events [ ]
+			7. Conditional Rendering [ ]
+			8. Lists and Keys [ ]
+			9. Forms [ ]
+			10. Lifting State Up [ ]
+			11. Composition vs Inheritance [ ]
+			12. Thinking In React [ ]
+		- [ ] Advanced Guides
+		- [ ] API Reference
+		- [ ] Hooks
+		- [ ] Testing
+	- [ ] English Documents
+		- [ ] Main Concepts
+		- [ ] Advanced Guides
+		- [ ] API Reference
+		- [ ] Hooks
+		- [ ] Testing

@@ -5,7 +5,7 @@ import { useInactiveListener, useWeb3Connect } from "../utils/hooks"
 import { NoEthereumProviderError, UserRejectedRequestError } from "@web3-react/injected-connector";
 import { Button } from "react-bootstrap";
 
-// 활성화
+// Wallet Connect Button -> if wallet connected, it will be disable to click and change its color. 
 const Activate = () => {
   const context = useWeb3React()
   const { activate, active } = context;
@@ -30,11 +30,11 @@ const Activate = () => {
     style={{
       borderColor: activating ? 'orange' : active ? 'unset' : 'green'
     }}
-    onClick={handleActivate}>Wallet Connect</Button>
+    onClick={handleActivate}>{active ? 'Wallet Connected' : 'Click here to Connect Wallet'}</Button>
   )
 }
 
-// 비활성화
+// Wallet Disconnect Button -> if wallet disconnected, it will be disable to click and change its color.
 const Deactivate = () => {
   const context = useWeb3React()
   const { deactivate, active } = context
@@ -50,11 +50,11 @@ const Deactivate = () => {
     style={{
       borderColor: active ? 'red' : 'unset'
     }}
-    onClick={handleDeactivate}>Disonnect</Button>
+    onClick={handleDeactivate}>{!active ? 'Not Connected' : 'Tab to Disconnect'}</Button>
   )
 }
 
-// 에러메시지. web3react injected-connector에서 제공되는 것 그대로 사용.. 아래의 Connect()에서 alert에 오류 메시지 띄우기로 사용
+// Error Message. just use from web3react injected-connector. Error message will be alert in Connect function.
 function getErrorMessage(error) {
   let errorMessage;
 
@@ -75,7 +75,7 @@ function getErrorMessage(error) {
 }
 
 
-// 연결. jsx에는 하나의 pragment. <></> 아래에 하나씩 생성.
+// Connect function has two components which is Activate, Deactivate
 export function Connect() {
   const { error } = useWeb3React()
 
@@ -90,3 +90,7 @@ export function Connect() {
     </>
   )
 }
+
+
+// Memo
+// 02.18 -> Want to make it? ->> If user click Connect button(or Wallet Icon), shows Modal for Metamask login. and after connected wallet, Connect Button disappears. (for example, Pala Square Login function...)

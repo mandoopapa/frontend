@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer = () => {
   return(
-    <footer>
-      <div className="mainfooter">
+    <>
+      <div>
         <a href='https://github.com/mandoopapa/frontend' target='_blank' rel='noreferrer'>Github</a>
       </div>
-    </footer>
+    </>
   )
 }
 
