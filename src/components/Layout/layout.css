@@ -1,0 +1,47 @@
+.header {
+	background-color: lightgray;
+	height: 60px;
+	width: 100%;
+}
+
+/* Wallet Connect button => nav */
+.nav {
+	float: right;
+}
+
+.footer {
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-color: lightgray;
+}
+
+/* Connect, SignMessage button */
+.button {
+	height: 30px;
+	padding: 0.5rem 1rem;
+	font-weight: 600;
+	text-align: center;
+	border: none;
+	border-radius: 8px;
+	display: inline-block;
+	width: auto;
+	cursor: pointer;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* News Category */
+.news {
+	width: auto;
+	display: flex;
+	background-color: lightskyblue;
+	padding: 10px 20px 20px 10px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	grid-gap: 5rem;
+}
+
+/* Wallet Status Category */
+.status {
+	width: auto;
+	display:block
+}

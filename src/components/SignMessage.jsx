@@ -24,6 +24,6 @@ export function SignMessage() {
 	}
 
 	return (
-		<Button variant="info" disable={!active ? true : false} onClick={handleSignMessage}>Sign Message</Button>
+		<Button disable={!active ? true : false} onClick={handleSignMessage}>Sign Message</Button>
 	)
 }

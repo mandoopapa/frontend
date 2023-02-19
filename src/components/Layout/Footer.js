@@ -1,9 +1,9 @@
-import React from 'react';
+import './layout.css'
 
 const Footer = () => {
   return(
     <>
-      <div>
+      <div className='footer'>
         <a href='https://github.com/mandoopapa/frontend' target='_blank' rel='noreferrer'>Github</a>
       </div>
     </>

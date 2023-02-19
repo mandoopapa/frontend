@@ -3,7 +3,7 @@ import { useState } from "react"
 import { injected } from "../utils/connectors"
 import { useInactiveListener, useWeb3Connect } from "../utils/hooks"
 import { NoEthereumProviderError, UserRejectedRequestError } from "@web3-react/injected-connector";
-import { Button } from "react-bootstrap";
+import './Layout/layout.css';
 
 // Wallet Connect Button -> if wallet connected, it will be disable to click and change its color. 
 const Activate = () => {
@@ -26,11 +26,8 @@ const Activate = () => {
   useInactiveListener(!eagerConnectionSuccessful);
 
   return (
-    <Button variant="primary" disabled={active} 
-    style={{
-      borderColor: activating ? 'orange' : active ? 'unset' : 'green'
-    }}
-    onClick={handleActivate}>{active ? 'Wallet Connected' : 'Click here to Connect Wallet'}</Button>
+    <button className="button" disabled={active}
+    onClick={handleActivate}>{active ? 'Wallet Connected' : 'Click here to Connect Wallet'}</button>
   )
 }
 
@@ -46,11 +43,8 @@ const Deactivate = () => {
   }
 
   return (
-    <Button variant="danger" disabled={!active} 
-    style={{
-      borderColor: active ? 'red' : 'unset'
-    }}
-    onClick={handleDeactivate}>{!active ? 'Not Connected' : 'Tab to Disconnect'}</Button>
+    <button className="button" disabled={!active} 
+    onClick={handleDeactivate}>{!active ? 'Not Connected' : 'Tab to Disconnect'}</button>
   )
 }
 
@@ -74,7 +68,6 @@ function getErrorMessage(error) {
   return errorMessage;
 }
 
-
 // Connect function has two components which is Activate, Deactivate
 export function Connect() {
   const { error } = useWeb3React()
@@ -84,13 +77,12 @@ export function Connect() {
   }
 
   return (
-    <>
-    <Activate />
-    <Deactivate />
-    </>
+    <div className="nav">
+      <Activate />
+      <Deactivate />
+    </div>
   )
 }
-
 
 // Memo
 // 02.18 -> Want to make it? ->> If user click Connect button(or Wallet Icon), shows Modal for Metamask login. and after connected wallet, Connect Button disappears. (for example, Pala Square Login function...)

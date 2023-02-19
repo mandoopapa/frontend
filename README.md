@@ -21,14 +21,13 @@
 
 - Wallet Connect Button updates
 	- [x] Change the text for connected, and not connected.
-	- [ ] 
 
 - Custom CSS
 	-	[ ] Creating my own CSS from blank.
 
 - Apply Eslint
 	- [x] Install Eslint extension
-	- [ ] Apply Eslint my project
+	- [x] Apply Eslint my project
 
 - Coin Transfer Button
 	- [ ] Create a Coin Transfer Button
@@ -36,18 +35,18 @@
 - Read and Practice React Documents
 	- [ ] Korean Documents
 		- [ ] Main Concepts
-			1. Hello World [x]
-			2. Introducing JSX [x]
-			3. Rendering Elements [ ]
-			4. Components and Props [ ]
-			5. State and Lifecycle [ ]
-			6. Handling Events [ ]
-			7. Conditional Rendering [ ]
-			8. Lists and Keys [ ]
-			9. Forms [ ]
-			10. Lifting State Up [ ]
-			11. Composition vs Inheritance [ ]
-			12. Thinking In React [ ]
+			- [x] Hello World
+			- [x] Introducing JSX
+			- [x] Rendering Elements
+			- [x] Components and Props
+			- [ ] State and Lifecycle
+			- [ ] Handling Events
+			- [ ] Conditional Rendering
+			- [ ] Lists and Keys
+			- [ ] Forms
+			- [ ] Lifting State Up
+			- [ ] Composition vs Inheritance
+			- [ ] Thinking In React
 		- [ ] Advanced Guides
 		- [ ] API Reference
 		- [ ] Hooks

@@ -1,10 +1,10 @@
-import React from 'react';
 import { Connect } from '../Connect';
+import './layout.css';
 
 const Header = () => {
   return(
     <>
-    <div>
+    <div className='header'>
       BonMedia - Web3
       <Connect />
     </div>
