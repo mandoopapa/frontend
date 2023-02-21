@@ -22,6 +22,7 @@ export function useWeb3Connect() {
     _tryActivatie()
   }, [activate])
 
+  // useEffect를 이용해 tryActviate가 실행되게 하기 위해서 작성
   useEffect(() => {
     tryActivate();
   }, [tryActivate]);

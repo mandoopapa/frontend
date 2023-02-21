@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unknown-property */
 import { useWeb3React } from "@web3-react/core";
-import { Button } from "react-bootstrap";
+import './Layout/layout.css'
 
 export function SignMessage() {
 	const { account, active, library } = useWeb3React()
@@ -24,6 +25,6 @@ export function SignMessage() {
 	}
 
 	return (
-		<Button disable={!active ? true : false} onClick={handleSignMessage}>Sign Message</Button>
+		<button className="button" disable={!active ? true : false} onClick={handleSignMessage}>Sign Message</button>
 	)
 }

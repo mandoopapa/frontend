@@ -7,10 +7,10 @@ const News = () => {
 	<div className='news'>
 		<div>
 			<h2>Max Lee</h2>
+			<Transfer />
 			<p>Latest News 1</p>
 			<p>Latest News 2</p>
 			<a href="/#">See the latest News on BonMedia</a>
-			<Transfer />
 		</div>
 
 		<div>

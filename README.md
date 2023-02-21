@@ -14,7 +14,7 @@
 	- Remove the UI that was simplified in 'styled component form' and Apply the react-bootstrap.
 
 ### 02.15 ~ 02.23 Seminar
-- [x] English Mode On
+- [x] English Mode
 
 - Practice Branch Strategy
 	- [x] Create a branch every week, it will be 'ProjectName-SeminarDate' form.
@@ -23,14 +23,14 @@
 	- [x] Change the text for connected, and not connected.
 
 - Custom CSS
-	-	[ ] Creating my own CSS from blank.
+	-	[x] Creating my own CSS from blank.
 
 - Apply Eslint
 	- [x] Install Eslint extension
 	- [x] Apply Eslint my project
 
 - Coin Transfer Button
-	- [ ] Create a Coin Transfer Button
+	- [x] Create a Coin Transfer Button
 
 - Read and Practice React Documents
 	- [ ] Korean Documents

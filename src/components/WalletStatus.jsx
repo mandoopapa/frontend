@@ -8,7 +8,7 @@ function ChainId() {
 
   return (
     <div>
-      <span>Chain Id</span>
+      <span>Chain Id : </span>
       <span>{chainId}</span>
     </div>
   )
@@ -46,7 +46,7 @@ function BlockNumber() {
 
   return (
     <div>
-        <span>Block Number</span>
+        <span>Block Number : </span>
         <span>{blockNumber}</span>
     </div>
   )
@@ -58,7 +58,7 @@ function Account() {
 
   return (
   <div>
-    <span>Account</span>
+    <span>Account : </span>
     <span>{account ? `${account.substring(0, 6)}...${account.substring(account.length-4)}` : ''}</span>
   </div>
   )
@@ -98,8 +98,8 @@ function Balance() {
 
   return (
     <div>
-      <span>Balance</span>
-      <span>{balance ? `${ethers.utils.formatEther(balance)} ETH` : ''}</span>
+      <span>Balance : </span>
+      <span>{balance ? `${ethers.utils.formatEther(balance)} ETH` : '0'}</span>
     </div>
   )
 }
@@ -107,11 +107,11 @@ function Balance() {
 
 export function WalletStatus() {
   return (
-    <>
+    <div className="status-body">
       <ChainId />
       <BlockNumber />
       <Account />
       <Balance />
-    </>
+    </div>
   )
 }

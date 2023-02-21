@@ -1,4 +1,5 @@
 import Web3 from 'web3';
+import './Layout/layout.css'
 
 // 수정전
 export function Transfer() {
@@ -19,7 +20,7 @@ export function Transfer() {
 
   return (
     <>
-      <button onClick={onClickHandler}>Donate ETH</button>
+      <button className='button' onClick={onClickHandler}>Donate ETH</button>
     </>
   );
 }

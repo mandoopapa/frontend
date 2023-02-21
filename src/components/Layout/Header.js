@@ -1,11 +1,12 @@
 import { Connect } from '../Connect';
 import './layout.css';
+import Logo from './bonlogo.png';
 
 const Header = () => {
   return(
     <>
     <div className='header'>
-      BonMedia - Web3
+      <img src={Logo} alt="BonLogo"></img>
       <Connect />
     </div>
     </>
