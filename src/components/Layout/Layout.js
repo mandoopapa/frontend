@@ -1,28 +1,28 @@
-import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import './bootstrap.css';
-import { SignMessage } from '../SignMessage';
 import { WalletStatus } from '../WalletStatus';
 import News from '../News';
+import './layout.css';
+import { Introduction } from '../Introduction';
 
+// Delete Bootstrap. Create a CSS on my own
 const Layout = () => {
   return (
     <>
       <Header />
-      <div className='container'>
+			<div className='body'>
+				<Introduction />
+
 				<News />
-				<br />
-				<div className='container'>
-				<p>
-					Connected Wallet Status
-				</p>
+				<div className='status'>
+					<span className='status-title'>
+						Connected Wallet Status
+					</span>
 					<WalletStatus />
 				</div>
-				
-				<SignMessage />
-      
+
 			</div>
+
       <Footer />
     </>
   )

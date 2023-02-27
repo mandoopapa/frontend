@@ -1,16 +1,9 @@
-import styled from "styled-components";
+import React from "react";
 import Layout from "./components/Layout/Layout";
-
-const StyledAppDiv = styled.div`
-  display: grid;
-  grid-gap: 20px;
-`
 
 function App() {
   return (
-    <StyledAppDiv>
-      <Layout />
-    </StyledAppDiv>
+    <Layout />
   );
 }
 
