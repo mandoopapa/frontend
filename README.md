@@ -39,12 +39,25 @@
 			- [x] Introducing JSX
 			- [x] Rendering Elements
 			- [x] Components and Props
-			- [ ] State and Lifecycle
-			- [ ] Handling Events
-			- [ ] Conditional Rendering
-			- [ ] Lists and Keys
-			- [ ] Forms
-			- [ ] Lifting State Up
+
+### 02.24 ~ 03.02 Seminar
+
+- Custom CSS
+	- [x] Update Webpage CSS
+
+- Github.io Hosting from my repository
+	- [x] Studying and Practicing Github.io Hosting
+	- [ ] How to build and hosting React Project to Github.io from my repository
+
+- Read and Practice React Documents
+	- [ ] Korean Documents
+		- [ ] Main Concepts
+			- [x] State and Lifecycle
+			- [x] Handling Events
+			- [x] Conditional Rendering
+			- [x] Lists and Keys
+			- [x] Forms
+			- [x] Lifting State Up
 			- [ ] Composition vs Inheritance
 			- [ ] Thinking In React
 		- [ ] Advanced Guides
