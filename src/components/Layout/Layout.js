@@ -10,6 +10,7 @@ const Layout = () => {
   return (
     <>
       <Header />
+			
 			<div className='body'>
 				<Introduction />
 

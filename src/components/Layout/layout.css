@@ -91,7 +91,7 @@ a {
 
 /* Footer Category */
 .footer {
-	position: absolute;
+	position: fixed;
 	display: block;
 	height: 100px;
 	width: 100%;
