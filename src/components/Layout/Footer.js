@@ -4,9 +4,7 @@ import './layout.css'
 const Footer = () => {
   return(
     <div className='footer'>
-      <span>
-        BonMedia
-      </span>
+      <h2>BonMedia</h2>
       <div className='github'>
         <a href='https://github.com/mandoopapa/frontend' target='_blank' rel='noreferrer'>Github</a>
       </div>

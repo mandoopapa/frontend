@@ -1,55 +1,70 @@
 /* This is my own CSS for My mini Project */
 
 .header {
-	background-color: lightgray;
-	height: 80px;
+	position: flex;
+	padding: 10px 0px 10px 10px;
+	background-color: RGB(223, 225, 255);
+	height: 90px;
 	width: 100%;
 }
 
 .body {
 	width: auto;
 	height: 100%;
-	margin-bottom: 80px;
 }
 
 /* Wallet Connect button => nav */
 .nav {
-	margin-top: 15px;
+	margin-top: 20px;
+	margin-right: 20px;
 	float: right;
 }
 
 /* Connect, SignMessage button */
 .button {
 	height: 40px;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 0.5rem;
 	font-weight: 700;
 	text-align: center;
 	border: none;
-	border-radius: 8px;
+	border-radius: 10px;
 	display: inline-block;
 	width: auto;
 	cursor: pointer;
-	background-color: cornsilk;
+	background-color: RGB(215, 255, 255);
 	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 /* Introduction Category */
 .intro {
-	display: flex;
+	text-align: center;
 	width: auto;
-	background-color: aquamarine;
 	justify-content: center;
-	padding: 0 20px;
+}
+
+.intro_sub {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	font-weight: 400;
 }
 
 /* News Category */
 .news {
 	width: auto;
 	display: flex;
-	background-color: rgb(173, 220, 250);
-	padding: 10px 20px 20px 10px;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding: 20px 20px 20px 30px;
 	grid-gap: 6rem;
+}
+
+a {
+	text-decoration-line: none;
+}
+
+.report_title {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 600;
 }
 
 /* Wallet Status Category */
@@ -57,13 +72,12 @@
 	width: auto;
 	display: block;
 	padding: 20px 20px 20px 20px;
-	background-color: azure;
 }
 
 .status-title {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 700;
-	background-color: lightcoral;
+	color: RGB(89, 137, 255);
 	padding: 5px 5px 5px 5px;
 }
 
@@ -75,16 +89,18 @@
 	line-height: 30px;
 }
 
+/* Footer Category */
 .footer {
-	position: absolute;
+	position: fixed;
 	display: block;
-	height: 80px;
+	height: 100px;
 	width: 100%;
-	background-color: lightgray;
+	background-color: RGB(223, 225, 255);
 }
 
 .github {
-	text-align: end;
+	float: right;
+	padding-right: 20px;
 	text-decoration-line: none;
-	font-weight: 600;
+	font-weight: 650;
 }

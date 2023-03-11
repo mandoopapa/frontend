@@ -39,21 +39,38 @@
 			- [x] Introducing JSX
 			- [x] Rendering Elements
 			- [x] Components and Props
-			- [ ] State and Lifecycle
-			- [ ] Handling Events
-			- [ ] Conditional Rendering
-			- [ ] Lists and Keys
-			- [ ] Forms
-			- [ ] Lifting State Up
-			- [ ] Composition vs Inheritance
-			- [ ] Thinking In React
-		- [ ] Advanced Guides
-		- [ ] API Reference
-		- [ ] Hooks
-		- [ ] Testing
-	- [ ] English Documents
+
+### 02.24 ~ 03.09 Seminar
+
+- Custom CSS
+	- [x] Update CSS
+
+- Github.io Hosting from my repository
+	- [x] Studying and Practicing Github.io Hosting
+	- [ ] How to build and hosting React Project to Github.io from my repository
+
+- Add and Show Dynamic Data from BonMedia
+	- [ ] How to do it?
+	- [x] Now I know that Every React Elements should have a 'unique' key props.
+
+- Read and Practice React Documents
+	- [ ] Korean Documents
 		- [ ] Main Concepts
+			- [x] State and Lifecycle
+			- [x] Handling Events
+			- [x] Conditional Rendering
+			- [x] Lists and Keys
+			- [x] Forms
+			- [x] Lifting State Up
+			- [x] Composition vs Inheritance
+			- [x] Thinking In React
 		- [ ] Advanced Guides
 		- [ ] API Reference
 		- [ ] Hooks
 		- [ ] Testing
+	- [ ] React Docs Beta (only English)
+		- [ ] Learn React
+			- [x] Describing the UI
+			- [ ] Adding Interactivity
+			- [ ] Managing State
+			- [ ] Escape Hatches
