@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+		// To fix error that "'React' refers to a UMD global..."
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "target": "ES5",
+    "outDir": "./dist",
+    "moduleResolution": "Node",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "dist"],
+	"nolmplicitAny": true,
+	"strict": true,
+	"strictNullChecks": true,
+	"strictFunctionTypes": true,
+	"strictBindCallApply": true,
+	"strictPropertyInitialization": true,
+	"noImplicitThis": true,
+	"alwaysStrict": true,
+}

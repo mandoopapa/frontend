@@ -64,13 +64,13 @@
 			- [x] Lifting State Up
 			- [x] Composition vs Inheritance
 			- [x] Thinking In React
-		- [ ] Advanced Guides
-		- [ ] API Reference
-		- [ ] Hooks
-		- [ ] Testing
 	- [ ] React Docs Beta (only English)
 		- [ ] Learn React
 			- [x] Describing the UI
-			- [ ] Adding Interactivity
-			- [ ] Managing State
-			- [ ] Escape Hatches
+
+### 03.10 ~ 03.22 Seminar
+
+- Typescript
+	- [x] Install Typescript on my project
+	- [x] Change jsx to tsx
+	

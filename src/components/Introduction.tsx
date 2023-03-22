@@ -1,4 +1,5 @@
 // Introduction of BonMedia.
+import React from "react";
 import './Layout/layout.css'
 import KU from './banner.jpg';
 
@@ -17,7 +18,7 @@ export function Introduction() {
 				<div>
 					<div className='intro_sub'>
 						<h3>Meet BonMedia Directly with Web3!</h3>
-						Donate crypto to journalists at Bionmedia, a media organization specializing in blockchain. It will help us write more quality articles.
+						Donate crypto to journalists at Bonmedia, a media organization specializing in blockchain. It will help us write more quality articles.
 						<br />
 						You can donate in a variety of cryptocurrencies, such as Ethereum. Press the Donate ETH button below.
 						<br />
